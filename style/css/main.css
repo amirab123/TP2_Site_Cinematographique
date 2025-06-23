@@ -78,4 +78,21 @@ body {
   background-color: #6b21a8;
 }
 
+.presentation__button--primary {
+  background-color: #1f2937;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+.presentation__button--primary:hover {
+  background-color: rgb(12.6162790698, 16.6860465116, 22.3837209302);
+}
+.presentation__button--secondary {
+  border: 1px solid #1f2937;
+  background-color: transparent;
+}
+.presentation__button--secondary:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=main.css.map */

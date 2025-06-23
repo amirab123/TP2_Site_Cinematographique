@@ -1,4 +1,4 @@
-
+@use 'variables' as *;
 // components.scss
 
 %base-button {
@@ -17,5 +17,29 @@
 
   &:hover {
     background-color: #6b21a8;
+  }
+}
+
+
+
+.presentation__button {
+  &--primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $primary-color;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
   }
 }
