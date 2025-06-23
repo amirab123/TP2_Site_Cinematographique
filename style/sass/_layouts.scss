@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+// layouts.scss
+
+@mixin container($max-width: 1280px) {
+  width: 100%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body {
+  font-family: $font-main;
+}
+
+.container {
+  @include container();
+}
