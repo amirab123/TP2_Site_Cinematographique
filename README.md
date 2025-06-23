@@ -36,7 +36,7 @@ Le projet comprend :
 ### Technologies utilisées
 
 - HTML5 sémantique  
-- Tailwind CSS (via CDN ou compilation)  
+- Tailwind CSS 
 - SASS / SCSS  
 - JavaScript (validation formulaire, interactions)  
 - Méthodologie BEM  
@@ -47,7 +47,7 @@ Le projet comprend :
 ### Installation et utilisation
 
 1. Cloner le dépôt  
-2. Compiler les fichiers SCSS en CSS (si nécessaire)  
+2. Compiler les fichiers SCSS en CSS  
 3. Ouvrir `index.html` dans un navigateur moderne
 
 ---
