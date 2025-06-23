@@ -89,8 +89,56 @@
 
   </section>
 <!-- Section 2 : -->
-<section>
+<section class="xl:min-h-screen xl:flex xl:items-center xl:justify-center container ">
 
+<div class="galerie flex flex-col items-center mx-auto p-4 space-y-6 text-center max-w-screen-xl xl:px-0">
+  <h2 class="text-3xl md:text-4xl font-bold text-purple-300 mb-4">Images et extraits</h2>
+  <p class="text-gray-400 mb-8 max-w-2xl">
+    Plongez dans l’univers visuel d’<strong>UniversMystique</strong> grâce à une sélection exclusive d’images et de vidéos issues de notre œuvre. Découvrez les coulisses, les scènes emblématiques et l’ambiance surnaturelle qui font la force de notre création.
+  </p>
+
+  <!-- Form -->
+  <form onsubmit="return validateForm()" class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+    <input
+      type="email"
+      placeholder="Entrez votre email..."
+      class="px-4 py-2 w-64 rounded-md border border-gray-600 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600"
+      required />
+   
+    <button
+      type="submit"
+      class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md transition duration-300"></button>
+   
+      S’inscrire
+    </button>
+      <p id="error-message" class="text-red-500 mt-2 hidden">Veuillez entrer un email valide .</p>
+  </form>
+
+  <!-- Galerie d’images -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+    <div class="relative flex flex-col items-center">
+      <img src="img/autumn-vibes-gothic-style-brunette-woman-dark-red-cloth.jpg" alt="Scène du rituel mystique" class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105" />
+      <p class="mt-2 text-sm text-gray-400">Rituel dans la forêt sacrée</p>
+    </div>
+    <div class="relative flex flex-col items-center">
+      <img src="img/portrait-female-scandinavian-viking.jpg" alt="Apparition d'un esprit"      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105" />
+      <p class="mt-2 text-sm text-gray-400">Apparition spectrale</p>
+    </div>
+    <div class="relative flex flex-col items-center">
+      <img src="img/male-holding-lantern-night.jpg" alt="Temple oublié dans la brume" class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105" />
+      <p class="mt-2 text-sm text-gray-400">Temple oublié</p>
+    </div>
+  </div>
+
+  <!-- Vidéo -->
+  <div class="video-player w-full max-w-5xl mx-auto">
+    <video controls class="w-full rounded-lg shadow-lg">
+      <source src="img/video.mp4" type="video/mp4" />
+    
+    </video>
+
+  </div>
+</div>
 
 
 
@@ -110,7 +158,75 @@
 
 
 <footer>
+<div class="container max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+    <div class="flex items-center space-x-6 text-sm">
+      <div class="flex items-center space-x-1 underline cursor-pointer">
+    
+<button class="button">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" class="svg-icon"><path stroke-width="2" stroke-linecap="round" stroke="#7e22ce" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
+</button>
+    
+        <a href="tel:+XX0000000" class="text-white hover:underline ml-2">+XX 000 0000</a>
+      </div>
+      <div class="flex items-center space-x-1 underline cursor-pointer">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d44f4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        <a href="mailto:hello@courriel.com" class="underline">hello@courriel.com</a>
+      </div>
+    </div>
 
+
+ 
+
+    <!-- Nom et réseaux sociaux droite -->
+    <div class="flex items-center space-x-6 text-sm">
+      <span>Amira </span>
+      <div class="flex space-x-4 text-black">
+
+        <!-- Facebook -->
+    
+<span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#1877f2]">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+    <path
+      d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+  </svg>
+</span>
+        <!-- LinkedIn -->
+    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+    <path
+      d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+  </svg>
+</span>
+
+        <!-- Twitter -->
+      <a href="#"><svg viewBox="328 355 335 276"
+            class="ml-auto" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A 70, 70 0 0 1 370, 523 A 70, 70 0 0 0 401, 521 A 70, 70 0 0 1 344, 455 A 70, 70 0 0 0 372, 460 A 70, 70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A 67, 67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A 65, 65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A 65, 65 0 0 1 630, 425 Z"
+                style="fill:#3BA9EE"></path>
+        </svg></a>
+
+        <!-- Instagram -->
+        <a href="#"><span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+    <path
+      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+  </svg>
+</span></a>
+
+      </div>
+    </div>
+  </div>
+
+   <hr class="bg-white h-0.5 border-none my-5 container">
+
+    <div class="flex left-0 container text-sm font-normal text-gray-600">
+      Cégep de Trois-Rivières
+    </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
