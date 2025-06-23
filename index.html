@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title> UniversMystique - Voyage au cœur de l'invisible</title>
+<title>Univers Mystique – Le Film Événement de l’Année</title>
 <link rel="icon" type="image/png" href="img/icon_cinema_final.png" >
   <link rel="stylesheet" href="style/css/main.css" >
   <!-- Tailwind  -->
@@ -38,18 +38,20 @@
       <h1 class="text-4xl font-bold text-purple-300 glow-text floating-animation">
         Plongez dans l’Univers Mystique
       </h1>
+    <p class="text-purple-400 text-lg italic"></p>
       <p class="text-gray-300">
-        Partez pour un voyage fascinant au cœur d’un monde où l’imaginaire défie la réalité.
-         Entre portails mystérieux et royaumes oubliés, découvrez une fresque cinématographique envoûtante,
-          peuplée de créatures légendaires et de pouvoirs ancestraux. Une aventure unique qui repousse 
-          les frontières du possible.
+        Un film fantastique qui repousse les limites de l’imaginaire.Partez pour un voyage fascinant au cœur d’un monde où l’imaginaire défie la réalité.
+        Entre portails mystérieux et royaumes oubliés, découvrez une fresque cinématographique envoûtante,
+        peuplée de créatures légendaires et de pouvoirs ancestraux. Une aventure unique qui repousse 
+        les frontières du possible.
       </p>
+     
       <div class="flex gap-4">
-        <button class="presentation__button presentation__button--secondary border px-4 py-2 rounded text-white">
+        <button class="border px-4 py-2 rounded text-white hover:bg-purple-700 transition">
           Explorer l’univers
         </button>
-        <button class="presentation__button presentation__button--primary bg-purple-600 text-white px-4 py-2 rounded flex items-center gap-2">
-          <span>✨</span> Visionner maintenant
+        <button class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-4 py-2 rounded flex items-center gap-2 hover:scale-105 transition">
+          <span>✨</span> Voir la bande-annonce
         </button>
       </div>
     </div>
@@ -77,10 +79,10 @@
     <img src="img/medieval-historical-rendering-landscape.jpg" alt="Image 3" class="w-1/5 h-full object-cover">
     <img src="img/male-holding-lantern-night.jpg" alt="Image 4" class="w-1/5 h-full object-cover">
     <img src="img/3d-rendering-swamp-landscape.jpg" alt="Image 5" class="w-1/5 h-full object-cover">
-  </div>
+
   
  </div>
- 
+  </div>
 <!-- Pagination -->
   <div class="flex justify-center mt-4 gap-2">
     <label for="slide1" class="cursor-pointer w-4 h-4 bg-purple-400 rounded-full block shadow-md hover:scale-110 transition"></label>
@@ -89,6 +91,7 @@
     <label for="slide4" class="cursor-pointer w-4 h-4 bg-purple-700 rounded-full block shadow-md hover:scale-110 transition"></label>
     <label for="slide5" class="cursor-pointer w-4 h-4 bg-purple-800 rounded-full block shadow-md hover:scale-110 transition"></label>
   </div>
+   </div>
   </section>
 
     <hr class="bg-white h-0.5 border-none my-5 container">
@@ -97,25 +100,44 @@
 
 <div class="galerie flex flex-col items-center mx-auto p-4 space-y-6 text-center max-w-screen-xl xl:px-0">
   <h2 class="text-3xl md:text-4xl font-bold text-purple-300 mb-4">Images et extraits</h2>
-  <p class="text-gray-400 mb-8 max-w-2xl">
-    Plongez dans l’univers visuel d’<strong>UniversMystique</strong> grâce à une sélection exclusive d’images et de vidéos issues de notre œuvre. Découvrez les coulisses, les scènes .
+ <p class="text-gray-400 mb-8 max-w-2xl">
+    Découvrez les coulisses fascinantes d’<strong>Univers Mystique</strong> à travers une sélection unique de photos de tournage, visuels inédits et extraits vidéos. 
+    Plongez dans l’ambiance mystérieuse du film et explorez les décors magiques, les créatures légendaires et les moments clés de cette fresque cinématographique.
   </p>
-
   <!-- Form -->
-  <form onsubmit="return validateForm()" class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12" novalidate>
+ <form class="flex justify-center mb-12" novalidate>
+  <div class="flex flex-col sm:flex-row items-center gap-4">
+    <label for="email" class="sr-only">
+  Adresse email </label>
+
     <input
       type="email"
+      id="email"
+      name="email"
+      required
       placeholder="Entrez votre email..."
-      class="px-4 py-2 w-64 rounded-md border border-gray-600 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-      required />
-   
+      class="peer px-4 py-2 w-64 rounded-md border border-gray-600 bg-gray-900 text-white 
+             focus:outline-none focus:ring-2 
+             invalid:border-red-500 invalid:ring-red-500
+             valid:border-green-500 valid:ring-green-500"
+      aria-describedby="email-error"
+    >
+
     <button
       type="submit"
-      class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md transition duration-300">
+      class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md transition duration-300"
+    >
       S’inscrire
     </button>
-      <p id="error-message" class="text-red-500 mt-2 hidden">Veuillez entrer un email valide .</p>
-  </form>
+
+    <p id="email-error"
+       class="mt-2 text-sm text-red-500 invisible peer-invalid:visible peer-focus:invisible">
+      Veuillez entrer un email valide.
+    </p>
+  </div>
+</form>
+
+
 
   <!-- Galerie d’images -->
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
@@ -229,8 +251,8 @@
 <img
   class="rounded-md border border-gray-500 w-full h-auto"
   src="img/devellopeuse.jpg"
-  alt="Kathryn Murphy"
-/>
+  alt="Kathryn Murphy">
+
 
       <h3 class="text-xl font-semibold">Kathryn Murphy</h3>
       <p class="text-sm text-indigo-400 mb-2">Développeuse Senior</p>
@@ -441,40 +463,76 @@
       </div>
     </div>
   </div>
-</section>
   <hr class="bg-white h-0.5 border-none my-5 container">
+</section>
+
+<div class="container mx-auto px-4 py-12 max-w-screen-xl space-y-20">
+  <div class="md:flex items-center gap-8">
+    <div class="md:w-1/2">
+      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="rounded-lg shadow-lg object-cover w-full h-64">
+    </div>
+    <div class="md:w-1/2 text-gray-300">
+
+      <p>
+        Découvrez la première partie de l’aventure, où l’éveil des portails mystiques bouleverse un monde oublié. Entre magie ancestrale et quêtes initiatiques, plongez dans l’inconnu.
+               <span class="text font-semibold text-purple-400 mb-4">(Univers Mystique – Saison 1 (2024))</span></p>
+    </div>
+  </div>
+
+  <div class="md:flex items-center gap-8 flex-row-reverse">
+    <div class="md:w-1/2">
+      <img src="img/filmdeux.jpg" alt="Univers Mystique Saison 2" class="rounded-lg shadow-lg object-cover w-full h-64">
+    </div>
+    <div class="md:w-1/2 text-gray-300">
+
+      <p>
+        La deuxième saison révèle la réapparition du Temple Oublié, source de mystères et de pouvoirs anciens. Les héros doivent faire face à de nouveaux dangers et alliances.
+            <span class="text font-semibold text-purple-400 mb-4">(Univers Mystique – Saison 2 (2025))</span></p>
+    </div>
+  </div>
 
 
+  <div class="md:flex items-center gap-8">
+    <div class="md:w-1/2">
+      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="rounded-lg shadow-lg object-cover w-full h-64">
+    </div>
+    <div class="md:w-1/2 text-gray-300">
 
-  <section>
+      <p>
+        L’ultime saison conduit les protagonistes à l’ouverture du Portail Dimensionnel lors du grand alignement des lunes, scellant le destin des mondes.
+              <span class="text font-semibold text-purple-400 mb-4">(Univers Mystique – Saison 3 (2026))</span></p>
+    </div>
+  </div>
+
+</div>
 
 
-  </section>
 </main>
 
 
 
 <footer>
 <div class="container max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-    <div class="flex items-center space-x-6 text-sm">
-      <div class="flex items-center space-x-1 underline cursor-pointer">
+    <div class="flex text-left space-x-6 text-sm">
+      <div class="flex  space-x-1 underline cursor-pointer">
     
 <button class="button">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" class="svg-icon"><path stroke-width="2" stroke-linecap="round" stroke="#7e22ce" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
 </button>
     
-        <a href="tel:+XX0000000" class="text-white hover:underline ml-2">  +XX 000 0000</a>
+        <a href="tel:+XX0000000" class="text-white hover:underline ml-2">+XX 000 0000</a>
       </div>
-      <div class="flex items-center space-x-1 underline cursor-pointer">
+      <div class="flex  space-x-1 underline cursor-pointer">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d44f4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         <a href="mailto:hello@courriel.com" class="underline">hello@courriel.com</a>
       </div>
     </div>
 
 
+
     <!-- Nom et réseaux sociaux  -->
     <div class="flex items-center space-x-6 text-sm">
-      <span>Amira </span>
+  <span class="font-semibold">Amira</span>
       <div class="flex space-x-4 text-black">
         <!-- Facebook -->
 <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#1877f2]">
