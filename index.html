@@ -30,7 +30,7 @@
     </nav>
   </header>
 
-<!-- Section principale : Présentation du film -->
+<!-- Section principale : Présentation du film-->
 <main>
   <section class="container presentation grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-4 py-16 max-w-[1280px] mx-auto">
     
@@ -50,14 +50,67 @@
         </button>
       </div>
     </div>
+ <!-- Carrousel  -->
+   <div class="relative w-full max-w-4xl mx-auto overflow-hidden border border-purple-700 rounded-lg h-[300px]">
+  <!-- Conteneur des slides -->
+  <input type="radio" name="carousel" id="slide1" class="hidden peer/slide1" checked>
+  <input type="radio" name="carousel" id="slide2" class="hidden peer/slide2">
+  <input type="radio" name="carousel" id="slide3" class="hidden peer/slide3">
+  <input type="radio" name="carousel" id="slide4" class="hidden peer/slide4">
+  <input type="radio" name="carousel" id="slide5" class="hidden peer/slide5">
+  
+  <div class="flex w-[500%] h-full animate-slider">
+    <img src="/img/view-3d-male-videographer.jpg" alt="Image 1" class="w-1/5 h-full object-cover" />
+    <img src="/img/fantasy-group-adventurers.jpg" alt="Image 2" class="w-1/5 h-full object-cover" />
+    <img src="/img/medieval-historical-rendering-landscape.jpg" alt="Image 3" class="w-1/5 h-full object-cover" />
+    <img src="/img/male-holding-lantern-night.jpg" alt="Image 4" class="w-1/5 h-full object-cover" />
+    <img src="/img/3d-rendering-swamp-landscape.jpg" alt="Image 5" class="w-1/5 h-full object-cover" />
 
+ 
+  </div>
+
+
+  <!-- Pagination-->
+<div class="flex justify-center mt-4  rounded   gap-2">
+  <label for="slide1" class="cursor-pointer w-4 h-4 bg-purple-400 rounded-full block shadow-md hover:scale-110 transition"></label>
+  <label for="slide2" class="cursor-pointer w-4 h-4 bg-purple-500 rounded-full block shadow-md hover:scale-110 transition"></label>
+  <label for="slide3" class="cursor-pointer w-4 h-4 bg-purple-600 rounded-full block shadow-md hover:scale-110 transition"></label>
+  <label for="slide4" class="cursor-pointer w-4 h-4 bg-purple-700 rounded-full block shadow-md hover:scale-110 transition"></label>
+  <label for="slide5" class="cursor-pointer w-4 h-4 bg-purple-800 rounded-full block shadow-md hover:scale-110 transition"></label>
+</div>
+
+
+
+
+
+  
+ </div>
  
 
   </section>
+<!-- Section 2 : -->
+<section>
+
+
+
+
+</section>
+
+
+
+
+<!-- Section 3 : -->
+<section>
+
+</section>
+
+
 </main>
 
 
 
+<footer>
 
+</footer>
 </body>
 </html>
