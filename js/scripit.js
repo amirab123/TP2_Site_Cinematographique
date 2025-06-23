@@ -4,14 +4,17 @@
   - Affiche un message d'erreur si nécessaire
 */
 function validateForm() {
-  const email = document.getElementById('email'); //  declarer Champ email
-  const error = document.getElementById('error-message'); // Message d'erreur
+  const emailInput = document.querySelector('input[type="email"]');
+  const errorMessage = document.getElementById('error-message');
+  const email = emailInput.value.trim();
 
-  if (!email.checkValidity()) { // Si invalide
-    error.classList.remove('hidden'); // Afficher le message
-    return false; // Bloquer l'envoi du formulaire
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    errorMessage.classList.remove('hidden');
+    return false; 
   } else {
-    error.classList.add('hidden'); // Cacher le message si email valide
+    errorMessage.classList.add('hidden');
     return true; 
   }
 }
