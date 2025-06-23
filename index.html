@@ -9,13 +9,13 @@
   <!-- Tailwind  -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-950 text-gray-100">
  <header class="header  flex  justify-between items-center p-4 max-w-screen-xl mx-auto">
     <div class="header__logo flex items-center gap-2">
       <img src="img/icon_cinema.png" alt="Logo UniversMystique" class="w-10 h-10" >
       <span  tabindex="0"
   role="button"
-  class="font-bold text-xl text-white-400 cursor-pointer focus:bg-purple-500">UniversMystique</span>
+  class="font-bold text-xl text-white-400 cursor-pointer ">UniversMystique</span>
 
     </div>
     <nav class="header__nav flex items-center gap-4">
@@ -38,7 +38,9 @@
         Plongez dans l’Univers Mystique
       </h1>
       <p class="text-gray-300">
-        Partez pour un voyage fascinant au cœur d’un monde où l’imaginaire défie la réalité. Entre portails mystérieux et royaumes oubliés, découvrez une fresque cinématographique envoûtante, peuplée de créatures légendaires et de pouvoirs ancestraux. Une aventure unique qui repousse les frontières du possible.
+        Partez pour un voyage fascinant au cœur d’un monde où l’imaginaire défie la réalité.
+         Entre portails mystérieux et royaumes oubliés, découvrez une fresque cinématographique envoûtante,
+          peuplée de créatures légendaires et de pouvoirs ancestraux. Une aventure unique qui repousse les frontières du possible.
       </p>
       <div class="flex gap-4">
         <button class="presentation__button presentation__button--secondary border px-4 py-2 rounded text-white">
@@ -59,11 +61,11 @@
   <input type="radio" name="carousel" id="slide5" class="hidden peer/slide5">
   
   <div class="flex w-[500%] h-full animate-slider">
-    <img src="/img/view-3d-male-videographer.jpg" alt="Image 1" class="w-1/5 h-full object-cover" />
-    <img src="/img/fantasy-group-adventurers.jpg" alt="Image 2" class="w-1/5 h-full object-cover" />
-    <img src="/img/medieval-historical-rendering-landscape.jpg" alt="Image 3" class="w-1/5 h-full object-cover" />
-    <img src="/img/male-holding-lantern-night.jpg" alt="Image 4" class="w-1/5 h-full object-cover" />
-    <img src="/img/3d-rendering-swamp-landscape.jpg" alt="Image 5" class="w-1/5 h-full object-cover" />
+    <img src="img/view-3d-male-videographer.jpg" alt="Image 1" class="w-1/5 h-full object-cover" />
+    <img src="img/fantasy-group-adventurers.jpg" alt="Image 2" class="w-1/5 h-full object-cover" />
+    <img src="img/medieval-historical-rendering-landscape.jpg" alt="Image 3" class="w-1/5 h-full object-cover" />
+    <img src="img/male-holding-lantern-night.jpg" alt="Image 4" class="w-1/5 h-full object-cover" />
+    <img src="img/3d-rendering-swamp-landscape.jpg" alt="Image 5" class="w-1/5 h-full object-cover" />
 
  
   </div>
@@ -93,11 +95,11 @@
 <div class="galerie flex flex-col items-center mx-auto p-4 space-y-6 text-center max-w-screen-xl xl:px-0">
   <h2 class="text-3xl md:text-4xl font-bold text-purple-300 mb-4">Images et extraits</h2>
   <p class="text-gray-400 mb-8 max-w-2xl">
-    Plongez dans l’univers visuel d’<strong>UniversMystique</strong> grâce à une sélection exclusive d’images et de vidéos issues de notre œuvre. Découvrez les coulisses, les scènes emblématiques et l’ambiance surnaturelle qui font la force de notre création.
+    Plongez dans l’univers visuel d’<strong>UniversMystique</strong> grâce à une sélection exclusive d’images et de vidéos issues de notre œuvre. Découvrez les coulisses, les scènes .
   </p>
 
   <!-- Form -->
-  <form onsubmit="return validateForm()" class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+  <form onsubmit="return validateForm()" class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12" novalidate>
     <input
       type="email"
       placeholder="Entrez votre email..."
@@ -158,7 +160,7 @@
     
     <!-- Carte 1 -->
     <div class="shadow-lg rounded-xl p-4 text-center text-gray-100">
-  <img class="rounded-md border border-gray-500 w-full h-auto" src="/img/ceoprofil.jpg" alt="Extra large avatar">
+  <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ceoprofil.jpg" alt="Extra large avatar">
       <h3 class="text-xl font-semibold">Wade Warren</h3>
       <p class="text-sm text-indigo-400 mb-2">Fondateur & CEO</p>
       <p class="text-gray-400 text-sm mb-4">Spécialiste des portails temporels secrets.</p>
@@ -169,7 +171,6 @@
       <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
     </svg>
   </a>
-
   <!-- Twitter -->
   <a href="#" aria-label="Twitter" class="h-7 w-7">
     <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
@@ -178,7 +179,6 @@
         fill="#3BA9EE" />
     </svg>
   </a>
-
   <!-- Instagram -->
   <a href="#" aria-label="Instagram" class="h-7 w-7">
     <svg xmlns="http://www.w3.org/2000/svg" fill="#c13584" viewBox="0 0 448 512" class="h-full w-full">
@@ -191,7 +191,7 @@
 
     <!-- Carte 2 -->
     <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img  class="rounded-md border border-gray-500 w-full h-auto" src="/img/ceo.jpg" alt="Kristin Watson">
+      <img  class="rounded-md border border-gray-500 w-full h-auto" src="img/ceo.jpg" alt="Kristin Watson">
       <h3 class="text-xl font-semibold">Kristin Watson</h3>
       <p class="text-sm text-indigo-400 mb-2">CTO </p>
       <p class="text-gray-400 text-sm mb-4">Maîtresse des  effets spéciaux <br>interstellaires.</p>
@@ -226,7 +226,7 @@
     <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
 <img
   class="rounded-md border border-gray-500 w-full h-auto"
-  src="/img/devellopeuse.jpg"
+  src="img/devellopeuse.jpg"
   alt="Kathryn Murphy"
 />
 
@@ -262,7 +262,7 @@
 
     <!-- Carte 4 -->
     <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img  class="rounded-md border border-gray-500 w-full h-auto" src="/img/markting_responsable.jpg" alt="Jenny Wilson">
+      <img  class="rounded-md border border-gray-500 w-full h-auto" src="img/markting_responsable.jpg" alt="Jenny Wilson">
       <h3 class="text-xl font-semibold">Jenny Wilson</h3>
       <p class="text-sm text-indigo-400 mb-2">Responsable Marketing</p>
       <p class="text-gray-400 text-sm mb-4">Ambassadrice de l'univers <br> mystique.</p>
@@ -298,7 +298,7 @@
 
     <!-- Carte 5 -->
     <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img class="rounded-md border border-gray-500 w-full h-auto" src="/img/chef.jpg" alt="Cameron Williamson">
+      <img class="rounded-md border border-gray-500 w-full h-auto" src="img/chef.jpg" alt="Cameron Williamson">
       <h3 class="text-xl font-semibold">Cameron Williamson</h3>
       <p class="text-sm text-indigo-400 mb-2">Chef de Produit</p>
       <p class="text-gray-400 text-sm mb-4">Explorateur des innovations secrètes.</p>
@@ -334,7 +334,7 @@
 
     <!-- Carte 6 -->
     <div class="shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img class="rounded-md border border-gray-500 w-full h-auto" src="/img/art-numerique-de-la-technologie-de-l-ia.jpg" alt="Courtney Henry" >
+      <img class="rounded-md border border-gray-500 w-full h-auto" src="img/art-numerique-de-la-technologie-de-l-ia.jpg" alt="Courtney Henry" >
       <h3 class="text-xl font-semibold">Courtney Henry</h3>
       <p class="text-sm text-indigo-400 mb-2">Analyste SEO</p>
       <p class="text-gray-400 text-sm mb-4">Maître des mots enchantés pour Google.</p>
@@ -370,7 +370,7 @@
 
     <!-- Carte 7 -->
     <div class="shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img  class="rounded-md border border-gray-500 w-full h-auto" src="/img/ux.jpg" alt="Savannah Nguyen" >
+      <img  class="rounded-md border border-gray-500 w-full h-auto" src="img/ux.jpg" alt="Savannah Nguyen" >
       <h3 class="text-xl font-semibold">Savannah Nguyen</h3>
       <p class="text-sm text-indigo-400 mb-2">Designer  UX</p>
       <p class="text-gray-400 text-sm mb-4">Créatrice d'interfaces magiques.</p>
@@ -406,7 +406,7 @@
 
     <!-- Carte 8 -->
     <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-      <img  class="rounded-md border border-gray-500 w-full h-auto" src="/img/react_programmeur.jpg" alt="Guy Hawkins" >
+      <img  class="rounded-md border border-gray-500 w-full h-auto" src="img/react_programmeur.jpg" alt="Guy Hawkins" >
       <h3 class="text-xl font-semibold">Guy Hawkins</h3>
       <p class="text-sm text-indigo-400 mb-2">Développeur React</p>
       <p class="text-gray-400 text-sm mb-4">Concepteur d'interfaces cosmiques.</p>
@@ -440,7 +440,7 @@
     </div>
   </div>
 </section>
-  <hr class="bg-white h-0.5 border-none my-5 container" >
+  <hr class="bg-white h-0.5 border-none my-5 container">
 
 
 
