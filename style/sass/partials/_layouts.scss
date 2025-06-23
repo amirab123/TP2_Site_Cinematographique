@@ -16,5 +16,5 @@ body {
 }
 
 .container {
-  @include container();
+  @include container(1280px);
 }
