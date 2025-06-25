@@ -106,9 +106,8 @@
   </p>
   <!-- Form -->
  <form class="flex justify-center mb-12" novalidate>
-  <div class="flex flex-col sm:flex-row items-center gap-4">
-    <label for="email" class="sr-only">
-  Adresse email </label>
+  <div class="flex flex-col sm:flex-row items-center gap-4 relative">
+    <label for="email" class="sr-only">Adresse email</label>
 
     <input
       type="email"
@@ -116,8 +115,8 @@
       name="email"
       required
       placeholder="Entrez votre email..."
-      class="peer px-4 py-2 w-64 rounded-md border border-gray-600 bg-gray-900 text-white 
-             focus:outline-none focus:ring-2 
+      class="peer px-4 py-2 w-64 rounded-md border border-gray-600 bg-gray-900 text-white
+             focus:outline-none focus:ring-2
              invalid:border-red-500 invalid:ring-red-500
              valid:border-green-500 valid:ring-green-500"
       aria-describedby="email-error"
@@ -131,11 +130,12 @@
     </button>
 
     <p id="email-error"
-       class="mt-2 text-sm text-red-500 invisible peer-invalid:visible peer-focus:invisible">
+       class="text-sm text-red-500 h-5 invisible peer-invalid:visible peer-focus:invisible peer-placeholder-shown:invisible">
       Veuillez entrer un email valide.
     </p>
   </div>
 </form>
+
 
 
 
@@ -170,7 +170,7 @@
 </section>
 
 
-
+ <hr class="bg-white h-0.5 border-none my-5 container">
 
 <!-- Section 3 : -->
 
@@ -469,7 +469,7 @@
 <div class="container mx-auto px-4 py-12 max-w-screen-xl space-y-20">
   <div class="md:flex items-center gap-8">
     <div class="md:w-1/2">
-      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full h-64 transform transition-transform duration-500 group-hover:scale-105">
+      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full h-64 transform transition-transform duration-300 hover:scale-105">
     </div>
     <div class="md:w-1/2 text-gray-300">
 
@@ -481,7 +481,8 @@
 
   <div class="md:flex items-center gap-8 flex-row-reverse">
     <div class="md:w-1/2">
-      <img src="img/filmdeux.jpg" alt="Univers Mystique Saison 2" class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full h-64 transform transition-transform duration-500 group-hover:scale-105">
+      <img src="img/filmdeux.jpg" alt="Univers Mystique Saison 2"
+       class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full transform transition-transform duration-300 hover:scale-105">
     </div>
     <div class="md:w-1/2 text-gray-300">
 
@@ -494,7 +495,7 @@
 
   <div class="md:flex items-center gap-8">
     <div class="md:w-1/2">
-      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full h-64 transform transition-transform duration-500 group-hover:scale-105">
+      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover w-full h-64 transform transition-transform duration-300 hover:scale-105">
     </div>
     <div class="md:w-1/2 text-gray-300">
 
@@ -512,7 +513,7 @@
 
 
 <footer>
-<div class="container max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0  max-w-[1280px] mx-auto">
+<div class="container max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
     <div class="flex text-left space-x-6 text-sm">
       <div class="flex  space-x-1 underline cursor-pointer">
     
