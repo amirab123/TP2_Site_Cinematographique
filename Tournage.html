@@ -36,46 +36,50 @@
 
 
   <!-- Visuel principal et chiffres -->
-  <section class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-20">
-    <!-- Image / vidéo du tournage -->
-    <div>
-      <img src="img/celebration-labour-day-with-3d-cartoon-portrait-working-woman (1).jpg" alt="Making-of du tournage"
-        class="rounded-lg shadow-lg w-full" />
-    </div>
+<section class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-20">
+  
+  <!-- Texte en premier sur petit écran, en second sur grand écran -->
+  <div class="order-1 lg:order-2 space-y-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-purple-300">Faits divers</h2>
+    <p class="text-gray-400">
+      Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+    </p>
 
-    <!-- Faits divers -->
-    <div class="space-y-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-purple-300">Faits divers</h2>
-      <p class="text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
-      </p>
-
-      <!-- Statistiques -->
-      <div class="grid grid-cols-2 gap-6 text-left text-gray-100">
-        <div>
-          <p class="text-2xl font-bold">44M</p>
-          <p class="text-sm text-gray-400">Billets vendus</p>
-        </div>
-        <div>
-          <p class="text-2xl font-bold">324B</p>
-          <p class="text-sm text-gray-400">Contenu généré</p>
-        </div>
-        <div>
-          <p class="text-2xl font-bold">230K</p>
-          <p class="text-sm text-gray-400">Utilisateurs actifs</p>
-        </div>
-        <div>
-          <p class="text-2xl font-bold">12</p>
-          <p class="text-sm text-gray-400">Prix remportés</p>
-        </div>
+    <!-- Statistiques -->
+    <div class="grid grid-cols-2 gap-6 text-left text-gray-100">
+      <div>
+        <p class="text-2xl font-bold">44M</p>
+        <p class="text-sm text-gray-400">Billets vendus</p>
       </div>
-
-      <a href="#"
-        class="inline-block border border-white text-white px-5 py-2 rounded hover:bg-purple-600 transition duration-300">
-        En savoir plus
-      </a>
+      <div>
+        <p class="text-2xl font-bold">324B</p>
+        <p class="text-sm text-gray-400">Contenu généré</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">230K</p>
+        <p class="text-sm text-gray-400">Utilisateurs actifs</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">12</p>
+        <p class="text-sm text-gray-400">Prix remportés</p>
+      </div>
     </div>
-  </section>
+
+    <a href="#"
+      class="inline-block border border-white text-white px-5 py-2 rounded hover:bg-purple-600 transition duration-300">
+      En savoir plus
+    </a>
+  </div>
+
+  <!-- Image en second sur petit écran, en premier sur grand écran -->
+  <div class="order-2 lg:order-1">
+    <img src="img/celebration-labour-day-with-3d-cartoon-portrait-working-woman (1).jpg"
+      alt="Making-of du tournage"
+      class="rounded-lg shadow-lg w-full" />
+  </div>
+
+</section>
+
 
   <!-- Galerie bloopers / tournage -->
 <section class="container mx-auto px-4 py-16">
