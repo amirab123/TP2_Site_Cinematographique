@@ -146,34 +146,38 @@
 
 
 
-        <!-- Galerie d’images -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-          <div class="relative flex flex-col items-center">
-            <img src="img/autumn-vibes-gothic-style-brunette-woman-dark-red-cloth.jpg" alt="Scène du rituel mystique"
-              class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
-            <p class="mt-2 text-sm text-gray-400">Rituel dans la forêt sacrée</p>
-          </div>
-          <div class="relative flex flex-col items-center">
-            <img src="img/portrait-female-scandinavian-viking.jpg" alt="Apparition d'un esprit"
-              class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
-            <p class="mt-2 text-sm text-gray-400">Apparition spectrale</p>
-          </div>
-          <div class="relative flex flex-col items-center">
-            <img src="img/male-holding-lantern-night.jpg" alt="Temple oublié dans la brume"
-              class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
-            <p class="mt-2 text-sm text-gray-400">Temple oublié</p>
-          </div>
-        </div>
+       <!-- Galerie images + vidéo -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+  <!-- Image 1 -->
+  <div class="relative flex flex-col items-center">
+    <img src="img/autumn-vibes-gothic-style-brunette-woman-dark-red-cloth.jpg" alt="Scène du rituel mystique"
+      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <p class="mt-2 text-sm text-gray-400">Rituel dans la forêt sacrée</p>
+  </div>
 
-        <!-- Vidéo -->
-        <div class="video-player w-full max-w-5xl mx-auto">
-          <video controls class="w-full rounded-lg shadow-lg">
-            <source src="img/video.mp4" type="video/mp4">
+  <!-- Image 2 -->
+  <div class="relative flex flex-col items-center">
+    <img src="img/portrait-female-scandinavian-viking.jpg" alt="Apparition d'un esprit"
+      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <p class="mt-2 text-sm text-gray-400">Apparition spectrale</p>
+  </div>
 
-          </video>
+  <!-- Image 3 -->
+  <div class="relative flex flex-col items-center md:col-span-1 xl:col-span-1">
+    <img src="img/male-holding-lantern-night.jpg" alt="Temple oublié dans la brume"
+      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <p class="mt-2 text-sm text-gray-400">Temple oublié</p>
+  </div>
 
-        </div>
-      </div>
+  <!-- Vidéo -->
+<div class="video-player w-full mx-auto md:col-span-1 xl:col-span-1 flex items-center hidden md:block">
+  <video controls class="w-full h-48 object-cover rounded-lg shadow-lg">
+    <source src="img/video.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+      
 
 
 
