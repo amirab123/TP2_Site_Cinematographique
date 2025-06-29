@@ -86,74 +86,122 @@
   <h2 class="text-2xl font-bold text-purple-300 text-center mb-8">
     Photos du tournage et bloopers
   </h2>
-  <div class="grid grid-cols-3 gap-6">
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Ligne 1 -->
     <img src="img/tournage1.png" alt="Blooper 1"
       class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
     <img src="img/tournage2.png" alt="Blooper 2"
       class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+
+    <!-- Ligne 2 : une image centrée et même taille sur mobile -->
     <img src="img/tournage3.png" alt="Blooper 3"
-      class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
-    <img src="img/tournage4.png"  alt="Blooper 4"
+      class="col-span-2 lg:col-span-1 w-1/2 lg:w-full mx-auto lg:mx-0 aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+
+    <!-- Ligne 3 -->
+    <img src="img/tournage4.png" alt="Blooper 4"
       class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
     <img src="img/tournage5.jpg" alt="Blooper 5"
       class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+
+    <!-- Ligne 4 : une image centrée et même taille sur mobile -->
     <img src="img/tournage6.jpg" alt="Blooper 6"
-      class="w-full aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+      class="col-span-2 lg:col-span-1 w-1/2 lg:w-full mx-auto lg:mx-0 aspect-square object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
   </div>
 </section>
 
 
-  <section class="container max-w-4xl mx-auto p-6">
-    <h2 class="text-3xl font-bold mb-4 text-center">Présentation de la direction artistique</h2>
-    <p class="text-center text-gray-500 mb-8">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.
-    </p>
 
-    <div class="space-y-4">
-      <!-- Accordéon Item 1 -->
-      <details class="border border-gray-300 rounded-md">
-        <summary class="cursor-pointer p-4 font-semibold text-lg flex justify-between items-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none"
-            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
-        <p class="p-4 text-gray-600">
-          Boler room yield to broker money balance bullish What's a Euro sure thing hawkish federal reserve...
-        </p>
-      </details>
 
-      <!-- Accordéon Item 2 -->
-      <details class="border border-gray-300 rounded-md">
-        <summary class="cursor-pointer p-4 font-semibold text-lg flex justify-between items-center">
-          All the boats rise life in the fast lane not a businessman?
-          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none"
-            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
-        <p class="p-4 text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum...
-        </p>
-      </details>
 
-      <!-- Accordéon Item 3 -->
-      <details class="border border-gray-300 rounded-md">
-        <summary class="cursor-pointer p-4 font-semibold text-lg flex justify-between items-center">
-          Free love nickel shank dust left hand twill regular fit hipster jeans biker boots?
-          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none"
-            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
-        <p class="p-4 text-gray-600">
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...
-        </p>
-      </details>
-    </div>
-  </section>
+
+
+ <section class="container mx-auto p-6">
+  <h2 class="text-3xl font-bold mb-4 text-center">La Forêt Horrible — Présentation</h2>
+  <p class="text-center text-gray-500 mb-8">
+    La Forêt Horrible est un film d’horreur psychologique qui plonge le spectateur dans un cauchemar oppressant au cœur d’une forêt hantée par des esprits vengeurs.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Accordéon 1 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Synopsis</summary>
+      <p class="p-4 text-gray-600">
+        Un groupe d’amis part camper dans une forêt réputée maudite. Quand la nuit tombe, des ombres menaçantes surgissent et transforment leur expédition en lutte pour survivre.
+      </p>
+    </details>
+
+    <!-- Accordéon 2 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Personnages principaux</summary>
+      <p class="p-4 text-gray-600">
+        Julia, la sceptique; Ethan, le passionné de paranormal; et Mia, hantée par de vieux cauchemars. Chacun cache un secret qui les relie à la forêt.
+      </p>
+    </details>
+
+    <!-- Accordéon 3 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Lieu de tournage</summary>
+      <p class="p-4 text-gray-600">
+        Le film a été tourné dans une ancienne forêt du nord, connue pour ses légendes macabres et ses brumes épaisses qui rendent l’atmosphère irréelle.
+      </p>
+    </details>
+
+    <!-- Accordéon 4 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Légende de la forêt</summary>
+      <p class="p-4 text-gray-600">
+        La légende raconte qu’une sorcière a été brûlée vive au centre de la forêt, et que son esprit tourmente quiconque ose y pénétrer après le coucher du soleil.
+      </p>
+    </details>
+
+    <!-- Accordéon 5 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Ambiance sonore</summary>
+      <p class="p-4 text-gray-600">
+        Le film est célèbre pour sa bande sonore angoissante : des chuchotements, des cris lointains, et des bruits de pas qui encerclent les personnages.
+      </p>
+    </details>
+
+    <!-- Accordéon 6 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Réception critique</summary>
+      <p class="p-4 text-gray-600">
+        La Forêt Horrible a été saluée comme l’un des films d’horreur les plus immersifs de l’année, grâce à sa mise en scène oppressante et ses effets visuels glaçants.
+      </p>
+    </details>
+
+    <!-- Accordéon 7 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Effets spéciaux</summary>
+      <p class="p-4 text-gray-600">
+        Les créatures ont été créées avec un mélange d’effets pratiques et numériques, donnant vie à des silhouettes spectrales effrayantes tapies dans les broussailles.
+      </p>
+    </details>
+
+    <!-- Accordéon 8 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Scène culte</summary>
+      <p class="p-4 text-gray-600">
+        La scène où Julia se réveille seule au milieu de la forêt et voit des dizaines de croix plantées dans le sol est considérée comme l’un des moments les plus marquants.
+      </p>
+    </details>
+
+    <!-- Accordéon 9 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Distribution</summary>
+      <p class="p-4 text-gray-600">
+        Avec Lily Harper, Noah Collins et Ava Martinez, le casting apporte une intensité réaliste à l’histoire terrifiante.
+      </p>
+    </details>
+
+    <!-- Accordéon 10 -->
+    <details class="border border-gray-300 rounded-md">
+      <summary class="cursor-pointer p-4 font-semibold text-lg">Date de sortie</summary>
+      <p class="p-4 text-gray-600">
+        Le film est sorti le 31 octobre, en parfaite adéquation avec Halloween, renforçant son succès auprès des amateurs de frissons.
+      </p>
+    </detai
+
 
   <section class="container mx-auto px-4 py-12 max-w-screen-xl">
     <h2 class="text-3xl md:text-4xl font-bold text-purple-300 mb-6 text-center">
@@ -198,8 +246,81 @@
   </section>
 
   <!-- Footer -->
-  <footer class="container mx-auto text-center text-sm text-gray-500 py-8">
-    &copy; 2025 UniversMystique. Tous droits réservés.
+ <footer>
+    <div class="container   px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <div class="flex text-left space-x-6 text-sm">
+        <div class="flex  space-x-1 underline cursor-pointer">
+
+          <button class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none"
+              class="svg-icon">
+              <path stroke-width="2" stroke-linecap="round" stroke="#7e22ce" fill-rule="evenodd"
+                d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <br>
+          <a href="tel:+XX0000000" class="text-white hover:underline ml-2"> +XX 000 0000</a>
+        </div>
+        <div class="flex  space-x-1 underline cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#d44f4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <a href="mailto:hello@courriel.com" class="underline">hello@courriel.com</a>
+        </div>
+      </div>
+
+
+
+      <!-- Nom et réseaux sociaux  -->
+      <div class="flex items-center space-x-6 text-sm">
+        <span class="font-semibold">Amira BELGHARAT & Zakaria NOUBI </span>
+        <div class="flex space-x-4 text-black">
+          <!-- Facebook -->
+          <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#1877f2]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+            </svg>
+          </span>
+          <!-- LinkedIn -->
+          <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <path
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+            </svg>
+          </span>
+
+          <!-- Twitter -->
+          <a href="#"><svg viewBox="328 355 335 276" class="ml-auto" height="24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A 70, 70 0 0 1 370, 523 A 70, 70 0 0 0 401, 521 A 70, 70 0 0 1 344, 455 A 70, 70 0 0 0 372, 460 A 70, 70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A 67, 67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A 65, 65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A 65, 65 0 0 1 630, 425 Z"
+                style="fill:#3BA9EE"></path>
+            </svg></a>
+
+          <!-- Instagram -->
+          <a href="#"><span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </span></a>
+
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-white h-0.5 border-none my-5 container">
+
+    <div class="flex left-0 container text-sm font-normal text-gray-600">
+      Cégep de Trois-Rivières
+    </div>
   </footer>
 
 </body>
