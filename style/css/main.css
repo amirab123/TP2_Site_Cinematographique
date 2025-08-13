@@ -2,13 +2,27 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.container {
-  width: 90%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.page {
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+  min-width: 500px;
+  margin: 0;
+}
+.page__header {
+  padding: 1rem;
+  background-color: rgb(22.75, 22.75, 22.75);
+}
+.page__content {
+  padding: 2rem;
+}
+.page__footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(35.5, 35.5, 35.5);
+}
+.page--light {
+  background-color: #f3f4f6;
+  color: #0a0a0a;
 }
 
 @keyframes float {
@@ -78,26 +92,31 @@ body {
   background-color: #6b21a8;
 }
 
-.presentation__button--primary {
-  background-color: #1f2937;
-  color: #ffffff;
-  transition: background-color 0.3s;
-}
-.presentation__button--primary:hover {
-  background-color: rgb(12.6162790698, 16.6860465116, 22.3837209302);
-}
-.presentation__button--secondary {
-  border: 1px solid #1f2937;
-  background-color: transparent;
-}
-.presentation__button--secondary:hover {
-  background-color: #1f2937;
-  color: #ffffff;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Arial", sans-serif;
   font-weight: 700;
 }
 
-/*# sourceMappingURL=main.css.map */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}

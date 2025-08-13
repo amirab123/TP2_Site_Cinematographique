@@ -15,6 +15,34 @@ body {
   font-family: $font-main;
 }
 
-.container {
-  @include container(1280px);
+
+.page {
+  background-color: $gray-950;
+  color: $gray-100;
+  min-width: 500px;
+  margin: 0;
+
+  &__header {
+    padding: 1rem;
+    background-color: lighten($gray-950, 5%);
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: lighten($gray-950, 10%);
+  }
+
+  &--light {
+    background-color: $gray-100;
+    color: $gray-950;
+  }
 }
+
+
+
+
