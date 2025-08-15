@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     const email = emailInput.value.trim();
-
+  emailInput.classList.remove('border-red-500', 'border-green-500');
     if (email === '') {
       emailError.textContent = "Le champ email est obligatoire.";
       emailError.classList.remove('hidden');
@@ -32,9 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     emailError.textContent = '';
     emailError.classList.add('hidden');
+     emailInput.classList.add('border-green-500');
+  
     emailInput.removeAttribute('aria-invalid');
+       setTimeout(() => {
+      emailInput.value = '';
+  
+    }, 800); 
 
-    alert('Formulaire valide, prêt à envoyer !');
-
+    alert('Formulaire valide, prêt à envoyer !')
+    ;
   });
 });

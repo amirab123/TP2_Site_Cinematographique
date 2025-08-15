@@ -16,40 +16,10 @@
   animation: float 3s ease-in-out infinite;
 }
 
-.glow-text {
-  text-shadow: 0 0 8px $primary-color, 0 0 12px $primary-color;
-}
 
-@keyframes slider {
-  0%, 20% {
-    transform: translateX(0%);
-  }
-  25%, 40% {
-    transform: translateX(-20%);
-  }
-  45%, 60% {
-    transform: translateX(-40%);
-  }
-  65%, 80% {
-    transform: translateX(-60%);
-  }
-  85%, 100% {
-    transform: translateX(-80%);
-  }
-}
 
-.animate-slider {
-  animation: slider 20s infinite;
-  display: flex;
-  transition: transform 1s ease-in-out;
-}
 
-.dot {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-  &:hover {
-    opacity: 1;
-  }
-}
+
+
 
 

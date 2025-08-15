@@ -20,7 +20,7 @@ body {
   background-color: $gray-950;
   color: $gray-100;
   min-width: 500px;
-  margin: 0;
+
 
   &__header {
     padding: 1rem;
@@ -43,6 +43,26 @@ body {
   }
 }
 
+.presentation {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr; // mobile : une colonne
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
 
 
+    p {
+      color: #e5e7eb; 
+      line-height: 1.6;
+      font-size: 1rem;
 
+      span {
+        color: #a78bfa; 
+        font-weight: 600;
+      }
+    }
+
+  }
+
+}

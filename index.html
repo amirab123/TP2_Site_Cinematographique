@@ -48,7 +48,7 @@
     <section
       class="container  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 items-center px-4 py-16">
 
-      <div class="presentation__content space-y-6">
+      <div class="presentation space-y-6">
         <h1 class="text-4xl font-bold text-purple-300 glow-text floating-animation">
           Plongez dans l’Univers Mystique
         </h1>
@@ -66,7 +66,7 @@
             Explorer l’univers
           </button>
           <button
-            class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-4 py-2 rounded flex items-center gap-2 hover:scale-105 transition">
+            class="btn-purple">
             <span>✨</span> Voir la bande-annonce
           </button>
         </div>
@@ -134,30 +134,30 @@
 
   
 </div>
- <form class="grid grid-cols-3 gap-x-6 items-center px-6 py-3 max-w-md mx-auto" novalidate>
+<form class="grid grid-cols-3 gap-x-6 items-center px-6 py-3 max-w-md mx-auto" novalidate>
   <label for="email" class="sr-only">Adresse email</label>
-
   <input
     type="email"
     id="email"
     name="email"
     required
     placeholder="Entrez votre email..."
-    class="peer px-3 py-1.5 rounded-md border border-gray-600 bg-gray-900 text-white
-           text-sm md:text-base xl:text-lg col-span-2"
-
+    class="peer px-3 py-1.5 rounded-md border border-gray-600 bg-gray-900 text-white text-sm md:text-base xl:text-lg col-span-2"
   />
-
-  
-
-  <button id="submitBtn"
+  <button
+    id="submitBtn"
     type="submit"
-    class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md transition duration-300
-           text-sm md:text-base xl:text-lg" 
+    class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md transition duration-300 text-sm md:text-base xl:text-lg"
   >
     S’inscrire
   </button>
+
+  <div id="email-error" class="col-span-3 text-red-500 text-sm mt-1 hidden"></div>
 </form>
+
+<!-- Lien vers le fichier JS externe -->
+
+
 
        <!-- Galerie images + vidéo -->
 <div class="grid  sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
@@ -187,6 +187,8 @@
   <div class="relative hidden md:flex items-center justify-center md:col-span-1 xl:col-span-3">
     <video controls class="object-cover rounded-md md:w-full md:h-48 xl:w-4/5 xl:h-auto mx-auto">
       <source src="img/video.mp4" type="video/mp4" >
+    le vidéo est  .
+
     </video>
 
 </div>
@@ -198,7 +200,7 @@
 
 
 <div class="container my-5">
-  <hr class="bg-white h-0.5 border-none w-full">
+  <hr class="bg-white">
 </div>
 
 
@@ -220,17 +222,18 @@
           <h3 class="text-xl font-semibold">Wade Warren</h3>
           <p class="text-base text-indigo-400 mb-2">Fondateur & CEO</p>
           <p class="text-gray-400 text-sm mb-4">Spécialiste des portails temporels  <br>secrets.</p>
-        
-           
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+       <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+       <span class="sr-only">twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+       <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -238,20 +241,24 @@
 
         <!-- Carte 2 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ceo.jpg" alt="Kristin Watson">
+          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ceo.jpg" alt=" Kristin  Watson ">
           <h3 class="text-xl font-semibold">Kristin Watson</h3>
           <p class="text-base text-indigo-400 mb-2">CTO </p>
-          <p class="text-gray-400 text-sm mb-4">Maîtresse des effets spéciaux <br>interstellaires.</p>
-                
+          <p class="text-gray-400 text-sm mb-4">Maîtresse des effets spéciaux <br> interstellaires.</p>
+    
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+        <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+
+        <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+        <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -259,24 +266,26 @@
 
         <!-- Carte 3 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
-          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/devellopeuse.jpg" alt="Kathryn Murphy">
+          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/devellopeuse.jpg" alt=" Kathryn Murphy ">
 
 
           <h3 class="text-xl font-semibold">Kathryn Murphy</h3>
           <p class="text-base text-indigo-400 mb-2">Développeuse Senior</p>
           <p class="text-gray-400 text-sm mb-4">Gardienne des scripts <br> magiques.</p>
           
-
-                    
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+        <span class="sr-only">Facebook</span>
+
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+        <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+        <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -286,7 +295,7 @@
         <!-- Carte 4 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/markting_responsable.jpg"
-            alt="Jenny Wilson">
+            alt=" Jenny Wilson ">
           <h3 class="text-xl font-semibold">Jenny Wilson</h3>
           <p class="text-base text-indigo-400 mb-2">Responsable Marketing</p>
           <p class="text-gray-400 text-sm mb-4">Ambassadrice de l'univers <br> mystique.</p>
@@ -295,12 +304,15 @@
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+        <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+        <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+        <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -308,24 +320,23 @@
 
         <!-- Carte 5 -->
         <div class=" shadow-lg  rounded-xl p-4 text-center text-gray-100">
-
-          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/chef.jpg" alt="Cameron Williamson">
+          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/chef.jpg" alt="Cameron  Williamson ">
           <h3 class="text-xl font-semibold">Cameron Williamson</h3>
           <p class="text-base text-indigo-400 mb-2">Chef de Produit</p>
           <p class="text-gray-400 text-sm mb-4">Explorateur des innovations <br> secrètes.</p>
-          
-
-                    
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+        <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+        <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
-    </a>
+        <span class="sr-only">Instagram</span>
+        </a>
  
           </div>
 
@@ -334,7 +345,7 @@
         <!-- Carte 6 -->
         <div class="shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto"
-            src="img/art-numerique-de-la-technologie-de-l-ia.jpg" alt="Courtney Henry">
+            src="img/art-numerique-de-la-technologie-de-l-ia.jpg" alt=" Courtney Henry ">
           <h3 class="text-xl font-semibold">Courtney Henry</h3>
           <p class="text-base text-indigo-400 mb-2">Analyste SEO</p>
           <p class="text-gray-400 text-sm mb-4">Maître des mots enchantés <br> pour Google.</p>
@@ -344,12 +355,15 @@
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+        <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+        <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+        <span class="sr-only"> Instagram </span>
     </a>
  
           </div>
@@ -357,7 +371,7 @@
 
         <!-- Carte 7 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100   md:col-start-2 md:col-span-1  justify-self-center     xl:col-auto">
-          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ux.jpg" alt="Savannah Nguyen">
+          <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ux.jpg" alt=" Savannah Nguyen ">
           <h3 class="text-xl font-semibold">Savannah Nguyen</h3>
           <p class="text-base text-indigo-400 mb-2">Designer UX</p>
           <p class="text-gray-400 text-sm mb-4">Créatrice d'interfaces <br>magiques.</p>
@@ -366,12 +380,15 @@
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+      <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+      <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+      <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -380,7 +397,7 @@
         <!-- Carte 8 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100 md:col-span-1 justify-self-center xl:col-auto">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/react_programmeur.jpg"
-            alt="Guy Hawkins">
+            alt=" Guy Hawkins ">
           <h3 class="text-xl font-semibold">Guy Hawkins</h3>
           <p class="text-base text-indigo-400 mb-2">Développeur React</p>
           <p class="text-gray-400 text-sm mb-4">Concepteur d'interfaces <br> cosmiques.</p>
@@ -390,12 +407,15 @@
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
+      <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
+      <span class="sr-only">Twitter</span>
     </a>
     <a href="#" class="text-pink-500 hover:text-pink-700">
       <i class="fab fa-instagram text-3xl"></i>
+      <span class="sr-only">Instagram</span>
     </a>
  
           </div>
@@ -410,6 +430,10 @@
  
     
 
+
+
+
+
 <div class="container my-5">
   <hr class="bg-white h-0.5 border-none w-full">
 </div>
@@ -419,9 +443,9 @@
     <!-- section 4  -->
     <div class="container mx-auto px-4 py-12 space-y-20">
   <!-- Bloc 1 -->
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
     <div>
-      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="w-full h-auto  shadow-lg object-cover">
+      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105"">
     </div>
     <div class="  text-gray-300">
       <p>   Découvrez la première partie de l’aventure, où l’éveil des portails mystiques bouleverse un monde oublié.
@@ -431,21 +455,32 @@
     </div>
   </div>
 
-  <!-- Bloc 2 -->
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
-    <div class="  text-gray-300 md:order-1">
-      <p>  La deuxième saison révèle la réapparition du Temple Oublié, source de mystères et de pouvoirs anciens. Les
-            héros doivent faire face à de nouveaux dangers et alliances   <span class="text font-semibold text-purple-400 mb-4">(Univers Mystique – Saison 2 (2025))</span>.</p>
-    </div>
-    <div class="md:order-2">
-      <img src="img/filmdeux.jpg" alt="Univers Mystique Saison 2" class="w-full h-auto  shadow-lg object-cover">
-    </div>
+    <!-- Bloc 2  -->
+<div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
+  <!-- Image -->
+  <div class="order-2 md:order-1 xl:order-2">
+    <img src="img/filmdeux.jpg" alt="Univers Mystique Saison 2" 
+         class="w-full h-auto shadow-lg object-cover transform transition-transform duration-300 hover:scale-105">
   </div>
 
+  <!-- Texte -->
+  <div class="text-gray-300 order-2 md:order-2 xl:order-1">
+    <p>
+      La deuxième saison révèle la réapparition du Temple Oublié, source de mystères et de pouvoirs anciens. 
+      Les héros doivent faire face à de nouveaux dangers et alliances 
+      <span class="font-semibold text-purple-400 mb-4">(Univers Mystique – Saison 2 (2025))</span>.
+    </p>
+  </div>
+</div>
+
+
+
+
+
   <!-- Bloc 3 -->
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
     <div>
-      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="w-full h-auto  shadow-lg object-cover">
+      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105"">
     </div>
     <div class=" text-gray-300">
       <p>   L’ultime saison conduit les protagonistes à l’ouverture du Portail Dimensionnel lors du grand alignement des
@@ -467,11 +502,8 @@
 
   <footer>
     <div class="container    px-4 py-4  gap-4">
-     
-
-
-      <!-- Nom et réseaux sociaux  -->
     
+      <!-- Nom et réseaux sociaux  -->
 
     <div class="grid grid-cols-3 items-center text-sm py-2 border-b border-black">
 
@@ -481,8 +513,9 @@
       📞 <span>+XX 000 0000</span>
     </span>
     <span class="grid grid-flow-col auto-cols-max gap-2">
-      📧 <span>hello@courriel.com</span>
-    </span>
+    <i class="fa-solid fa-envelope"></i>
+     <span>hello@courriel.com</span>
+ 
   </div>
 
   <!--  nom -->
@@ -497,15 +530,19 @@
       <div class="flex space-x-4">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-2xl"></i>
+        <span class="sr-only">Facebook</span>
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-2xl"></i>
+        <span class="sr-only">twitter</span>
     </a>
       <a href="#" class="text-blue-800 hover:text-blue-900">
       <i class="fab fa-linkedin text-2xl"></i>
+        <span class="sr-only">LinkedIn</span>
     </a>
     <a href="#" class="text-pink-600 hover:text-pink-700">
       <i class="fab fa-instagram text-2xl"></i>
+        <span class="sr-only">Instagram</span>
     </a>
 
 
@@ -526,7 +563,8 @@
   </footer>
   <!-- fin footer -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script src="js/validation.js" defer></script>
+<script src="js/validation.js" ></script>
+
 
 </body>
 
