@@ -1,5 +1,5 @@
 @use 'variables'as *;
-@use 'mixins'as *;
+@use 'mixins' as *;
 
 .team-card {
   @include card;
@@ -12,7 +12,9 @@
   }
 
   h3 {
-    font-weight: 600;
+    font-weight:200;
+    font-size: 1.25rem;
+
   }
 
   .role {
@@ -32,10 +34,9 @@
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
-
-    a.facebook { @include social-icon($color-facebook, $color-hover-facebook); }
-    a.twitter  { @include social-icon($color-twitter, $color-hover-twitter); }
-    a.instagram { @include social-icon($color-instagram, $color-hover-instagram); }
+a.facebook   { @include social-icon($color-facebook, $color-facebook-hover); }
+a.twitter    { @include social-icon($color-twitter, $color-twitter-hover); }
+a.instagram  { @include social-icon($color-instagram, $color-instagram-hover); }
 
     span.sr-only {
       position: absolute;

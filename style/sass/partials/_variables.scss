@@ -22,14 +22,15 @@ $max-width: 1280px;
 // Couleurs  section acteurs 
 $color-text-light: #f3f4f6;       // text-gray-100
 $color-text-muted: #9ca3af;       // text-gray-400
-$color-primary: #6366f1;          // indigo-400
-$color-facebook: #3b5998;
+$color-primary: #818cf8;          // indigo-400
+$color-facebook: #3b82f6;       // Couleur normale
+$color-facebook-hover: #2563eb;
 $color-twitter: #1da1f2;
 $color-instagram: #e1306c;
+$color-twitter-hover: #0d8ecf;
+$color-instagram-hover: #b22a5b;
 $color-border: #6b7280;           // border-gray-500
-$color-hover-facebook: lighten($color-facebook, 10%);
-$color-hover-twitter: lighten($color-twitter, 10%);
-$color-hover-instagram: lighten($color-instagram, 10%);
+
 
 
 
