@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +30,7 @@
   <nav class="peer-checked:flex hidden peer-checked:flex-col absolute top-16 left-0 w-full  text-white p-4 gap-4
               md:flex md:flex-row md:static md:w-auto md:bg-transparent md:items-center md:gap-4 bg-purple-400">
     <a href="index.html" class="flex items-center gap-1 text hover:text-purple-300" aria-label="Accueil" title="Retour à l'accueil">
-      🏠 <span class="active:underline">Accueil</span>
+      🏠 <span>Accueil</span>
     </a>
     <a href="tournage.html" class="flex items-center gap-1 text hover:text-purple-300" aria-label="Tournage" title="Voir les détails du tournage">
       🎬 <span>Tournage</span>
@@ -47,12 +46,11 @@
 
     <section
       class="container  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 items-center px-4 py-16">
-
       <div class="presentation space-y-6">
         <h1 class="text-4xl font-bold text-purple-300 glow-text floating-animation">
           Plongez dans l’Univers Mystique
         </h1>
-        <p class="text-purple-400 text-lg "></p>
+      
         <p class="text-gray-300">
           Un film fantastique qui repousse les limites de l’imaginaire.Partez pour un voyage fascinant au cœur d’un
           monde où l’imaginaire défie la réalité.
@@ -62,7 +60,7 @@
         </p>
 
         <div class="flex gap-4">
-          <button class="border px-4 py-2 rounded text-white hover:bg-purple-700 transition">
+          <button class="button-secondary">
             Explorer l’univers
           </button>
           <button
@@ -72,9 +70,8 @@
         </div>
       </div>
       <!-- Carrousel  -->
-
 <div class="relative w-full max-w-4xl mx-auto">
-  <div class="overflow-hidden border border-purple-700 rounded-lg h-[300px]">
+  <div class="overflow-hidden border border-purple-700 h-[500px]">
     <!-- Radios cachés -->
     <input type="radio" name="carousel" id="slide1" class="hidden peer/slide1" checked>
     <input type="radio" name="carousel" id="slide2" class="hidden peer/slide2">
@@ -118,6 +115,12 @@
   <hr class="bg-white h-0.5 border-none w-full">
 </div>
 
+
+
+
+
+
+
     <!-- Section 2 : -->
     <section class=" container  mx-auto px-4 py-8  ">
 <div class="max-w-4xl mx-auto text-center mb-12 grid gap-8 px-4">
@@ -134,7 +137,9 @@
 
   
 </div>
-<form class="grid grid-cols-3 gap-x-6 items-center px-6 py-3 max-w-md mx-auto" novalidate>
+
+
+<form class="grid grid-cols-3 gap-x-6 items-center px-6 py-3 max-w-md mx-auto  p-4" novalidate>
   <label for="email" class="sr-only">Adresse email</label>
   <input
     type="email"
@@ -143,7 +148,7 @@
     required
     placeholder="Entrez votre email..."
     class="peer px-3 py-1.5 rounded-md border border-gray-600 bg-gray-900 text-white text-sm md:text-base xl:text-lg col-span-2"
-  />
+  >
   <button
     id="submitBtn"
     type="submit"
@@ -155,39 +160,37 @@
   <div id="email-error" class="col-span-3 text-red-500 text-sm mt-1 hidden"></div>
 </form>
 
-<!-- Lien vers le fichier JS externe -->
+
 
 
 
        <!-- Galerie images + vidéo -->
-<div class="grid  sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+<div class="grid  sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12 p-8 ">
   <!-- Image 1 -->
   <div class="relative flex flex-col items-center">
-    <img src="img/autumn-vibes-gothic-style-brunette-woman-dark-red-cloth.jpg" alt="Scène du rituel mystique"
-      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <img src="img/autumn-vibes-gothic-style-brunette-woman-dark-red-cloth.jpg" alt="Scène du rituel mystique" class=" w-full h-48 object-cover  transform transition-transform duration-300 hover:scale-105">
     <p class="mt-2 text-sm text-gray-400">Rituel dans la forêt sacrée</p>
   </div>
 
   <!-- Image 2 -->
   <div class="relative flex flex-col items-center">
-    <img src="img/portrait-female-scandinavian-viking.jpg" alt="Apparition d'un esprit"
-      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <img src="img/portrait-female-scandinavian-viking.jpg" alt=" Apparition d'un esprit " class=" w-full h-48 object-cover transform transition-transform duration-300 hover:scale-105">
+
     <p class="mt-2 text-sm text-gray-400">Apparition spectrale</p>
   </div>
 
   <!-- Image 3 -->
   <div class="relative flex flex-col items-center ">
-    <img src="img/male-holding-lantern-night.jpg" alt="Temple oublié dans la brume"
-      class="w-full h-48 object-cover rounded-md transform transition-transform duration-300 hover:scale-105">
+    <img src="img/male-holding-lantern-night.jpg" alt=" Temple oublié dans la brume "    class=" w-full h-48 object-cover  transform transition-transform duration-300 hover:scale-105">
     <p class="mt-2 text-sm text-gray-400">Temple oublié</p>
   </div>
 
   <!-- Vidéo -->
 
   <div class="relative hidden md:flex items-center justify-center md:col-span-1 xl:col-span-3">
-    <video controls class="object-cover rounded-md md:w-full md:h-48 xl:w-4/5 xl:h-auto mx-auto">
+    <video controls class="object-cover  md:w-full md:h-48 xl:w-4/5 xl:h-auto mx-auto">
       <source src="img/video.mp4" type="video/mp4" >
-    le vidéo est  .
+    le vidéo est   montre l’univers du film  .
 
     </video>
 
@@ -199,6 +202,8 @@
 
 
 
+
+
 <div class="container my-5">
   <hr class="bg-white">
 </div>
@@ -206,22 +211,26 @@
 
 
 
+
+
+
+
     <!-- Section 3 : -->
 
-    <section class="container  mx-auto p-6 space-y-8  text-center ">
+    <section class="container  mx-auto p-6 space-y-8   ">
       <h2 class="text-3xl font-bold text-left text-purple-300  mb-4">Présentation des acteurs</h2>
       <p class="text-gray-400  mb-10 ">
         Les talents mystérieux qui donnent vie à l'univers fantastique de CinémaGraphique.
       </p>
 
-      <div class="grid  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div class="grid  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
 
         <!-- Carte 1 -->
         <div class="shadow rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ceoprofil.jpg" alt="Extra large avatar">
-          <h3 class="text-xl font-semibold">Wade Warren</h3>
+          <h3 class=" font-semibold">Wade Warren</h3>
           <p class="text-base text-indigo-400 mb-2">Fondateur & CEO</p>
-          <p class="text-gray-400 text-sm mb-4">Spécialiste des portails temporels  <br>secrets.</p>
+          <p class="text-gray-400 text-sm mb-4">Spécialiste des portails temporels secrets.</p>
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
@@ -242,7 +251,7 @@
         <!-- Carte 2 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ceo.jpg" alt=" Kristin  Watson ">
-          <h3 class="text-xl font-semibold">Kristin Watson</h3>
+          <h3 class=" font-semibold">Kristin Watson</h3>
           <p class="text-base text-indigo-400 mb-2">CTO </p>
           <p class="text-gray-400 text-sm mb-4">Maîtresse des effets spéciaux <br> interstellaires.</p>
     
@@ -267,17 +276,13 @@
         <!-- Carte 3 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/devellopeuse.jpg" alt=" Kathryn Murphy ">
-
-
-          <h3 class="text-xl font-semibold">Kathryn Murphy</h3>
+          <h3 class=" font-semibold">Kathryn Murphy</h3>
           <p class="text-base text-indigo-400 mb-2">Développeuse Senior</p>
           <p class="text-gray-400 text-sm mb-4">Gardienne des scripts <br> magiques.</p>
-          
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
         <span class="sr-only">Facebook</span>
-
     </a>
     <a href="#" class="text-blue-400 hover:text-blue-500">
       <i class="fab fa-twitter text-3xl"></i>
@@ -287,16 +292,14 @@
       <i class="fab fa-instagram text-3xl"></i>
         <span class="sr-only">Instagram</span>
     </a>
- 
           </div>
-         
         </div>
 
         <!-- Carte 4 -->
         <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/markting_responsable.jpg"
             alt=" Jenny Wilson ">
-          <h3 class="text-xl font-semibold">Jenny Wilson</h3>
+          <h3 class=" font-semibold">Jenny Wilson</h3>
           <p class="text-base text-indigo-400 mb-2">Responsable Marketing</p>
           <p class="text-gray-400 text-sm mb-4">Ambassadrice de l'univers <br> mystique.</p>
          
@@ -321,7 +324,7 @@
         <!-- Carte 5 -->
         <div class=" shadow-lg  rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/chef.jpg" alt="Cameron  Williamson ">
-          <h3 class="text-xl font-semibold">Cameron Williamson</h3>
+          <h3 class=" font-semibold">Cameron Williamson</h3>
           <p class="text-base text-indigo-400 mb-2">Chef de Produit</p>
           <p class="text-gray-400 text-sm mb-4">Explorateur des innovations <br> secrètes.</p>
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
@@ -346,9 +349,9 @@
         <div class="shadow-lg rounded-xl p-4 text-center text-gray-100">
           <img class="rounded-md border border-gray-500 w-full h-auto"
             src="img/art-numerique-de-la-technologie-de-l-ia.jpg" alt=" Courtney Henry ">
-          <h3 class="text-xl font-semibold">Courtney Henry</h3>
+          <h3 class=" font-semibold">Courtney Henry</h3>
           <p class="text-base text-indigo-400 mb-2">Analyste SEO</p>
-          <p class="text-gray-400 text-sm mb-4">Maître des mots enchantés <br> pour Google.</p>
+          <p class="text-gray-400 text-sm mb-4">Maître des mots enchantés <br> pour conquérir Google.</p>
           
 
                     
@@ -370,9 +373,9 @@
         </div>
 
         <!-- Carte 7 -->
-        <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100   md:col-start-2 md:col-span-1  justify-self-center     xl:col-auto">
+        <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100      md:col-span-1  xl:col-auto">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/ux.jpg" alt=" Savannah Nguyen ">
-          <h3 class="text-xl font-semibold">Savannah Nguyen</h3>
+          <h3 class=" font-semibold">Savannah Nguyen</h3>
           <p class="text-base text-indigo-400 mb-2">Designer UX</p>
           <p class="text-gray-400 text-sm mb-4">Créatrice d'interfaces <br>magiques.</p>
           
@@ -395,15 +398,12 @@
         </div>
 
         <!-- Carte 8 -->
-        <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100 md:col-span-1 justify-self-center xl:col-auto">
+        <div class=" shadow-lg rounded-xl p-4 text-center text-gray-100   md:col-span-1 xl:col-auto">
           <img class="rounded-md border border-gray-500 w-full h-auto" src="img/react_programmeur.jpg"
             alt=" Guy Hawkins ">
-          <h3 class="text-xl font-semibold">Guy Hawkins</h3>
+          <h3 class=" font-semibold">Guy Hawkins</h3>
           <p class="text-base text-indigo-400 mb-2">Développeur React</p>
           <p class="text-gray-400 text-sm mb-4">Concepteur d'interfaces <br> cosmiques.</p>
-         
-
-                  
       <div class="flex space-x-4 justify-center items-center  mt-4  ">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-3xl"></i>
@@ -417,12 +417,9 @@
       <i class="fab fa-instagram text-3xl"></i>
       <span class="sr-only">Instagram</span>
     </a>
- 
           </div>
           </div> 
-    
       </div>
-
     </section>
 
 
@@ -445,7 +442,7 @@
   <!-- Bloc 1 -->
   <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
     <div>
-      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105"">
+      <img src="img/film.jpg" alt="Univers Mystique Saison 1" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105">
     </div>
     <div class="  text-gray-300">
       <p>   Découvrez la première partie de l’aventure, où l’éveil des portails mystiques bouleverse un monde oublié.
@@ -480,7 +477,7 @@
   <!-- Bloc 3 -->
   <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 items-center xl:max-w-6xl xl:mx-auto">
     <div>
-      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105"">
+      <img src="img/filmtrois.jpg" alt="Univers Mystique Saison 3" class="w-full h-auto  shadow-lg object-cover transform transition-transform duration-300 hover:scale-105">
     </div>
     <div class=" text-gray-300">
       <p>   L’ultime saison conduit les protagonistes à l’ouverture du Portail Dimensionnel lors du grand alignement des
@@ -500,34 +497,24 @@
 
          <!-- Footer -->
 
-  <footer>
-    <div class="container    px-4 py-4  gap-4">
-    
-      <!-- Nom et réseaux sociaux  -->
+  
 
-    <div class="grid grid-cols-3 items-center text-sm py-2 border-b border-black">
+  <footer class="container py-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Contact -->
+    <div class="flex items-center space-x-4 text-sm">
+      <span>📞 +XX 000 0000</span>
+      
+      <span> <i class="fa-solid fa-envelope"></i> hello@courriel.com</span>
+    </div>
 
-  <!--  : téléphone + email -->
-  <div class="grid grid-flow-col auto-cols-max gap-6">
-    <span class="grid grid-flow-col auto-cols-max gap-2">
-      📞 <span>+XX 000 0000</span>
-    </span>
-    <span class="grid grid-flow-col auto-cols-max gap-2">
-    <i class="fa-solid fa-envelope"></i>
-     <span>hello@courriel.com</span>
- 
-  </div>
+    <!-- Noms des auteurs -->
+    <div class="text-right text-sm flex-1 p-8 ">
+      Amira BELGHARAT & Zakaria NOUBI
+    </div>
 
-  <!--  nom -->
-  <div class="text-right text-xs col-span-1">
-  Amira BELGHARAT & Zakaria NOUBI
-  </div>
-
-  <!--  icônes réseaux sociaux -->
-  <div class="grid grid-flow-col auto-cols-max gap-4 justify-end">
-
-
-      <div class="flex space-x-4">
+    <!-- Réseaux sociaux -->
+    <div class="flex items-center space-x-3 text-sm">
     <a href="#" class="text-blue-500 hover:text-blue-600">
       <i class="fab fa-facebook-f text-2xl"></i>
         <span class="sr-only">Facebook</span>
@@ -544,23 +531,16 @@
       <i class="fab fa-instagram text-2xl"></i>
         <span class="sr-only">Instagram</span>
     </a>
-
-
+    </div>
   </div>
 
- 
+  <hr class="border-gray-500 my-4">
 
-  
+  <div class="text-sm text-left">
+    Cégep de Trois-Rivières
   </div>
+</footer>
 
-</div>
- <hr class=" container bg-white h-0.5 border-none my-5 ">
-<!-- Ligne en dessous -->
-<div class="text-xs mt-2">
-  Cégep de Trois-Rivières
-</div>
-
-  </footer>
   <!-- fin footer -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script src="js/validation.js" ></script>

@@ -37,11 +37,34 @@ body {
     background-color: lighten($gray-950, 10%);
   }
 
-  &--light {
-    background-color: $gray-100;
-    color: $gray-950;
+
+}
+
+.header {
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; // équivaut à Tailwind gap-2
+
+    img {
+      width: 2.5rem;  // équivaut à w-10
+      height: 2.5rem; // équivaut à h-10
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.25rem; // équivaut à text-xl
+      color: #fff; // text-white
+      cursor: pointer;
+
+      &:focus {
+        outline: 2px solid #a855f7; // violet (focus visible)
+        outline-offset: 2px;
+      }
+    }
   }
 }
+
 
 .presentation {
   &__content {
