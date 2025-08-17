@@ -14,7 +14,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;   
+  font-size: 2rem; 
+  color: $purple-light; // h2 color
+    font-weight: bold;   
 }
 
 h3 {

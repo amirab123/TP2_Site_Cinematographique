@@ -1,0 +1,25 @@
+
+.header {
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 2.5rem;  
+      height: 2.5rem; 
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #fff; 
+      cursor: pointer;
+
+      &:focus {
+        outline: 2px solid #a855f7; 
+        outline-offset: 2px;
+      }
+    }
+  }
+}

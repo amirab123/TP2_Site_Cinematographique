@@ -2,27 +2,6 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.container.my-5 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.container.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.container.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.container.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 .page {
   background-color: #0a0a0a;
   color: #f3f4f6;
@@ -38,14 +17,24 @@ body {
 .page__footer {
   padding: 1rem;
   text-align: center;
-  background-color: rgb(35.5, 35.5, 35.5);
-}
-.page--light {
-  background-color: #f3f4f6;
-  color: #0a0a0a;
 }
 
-
+.presentation__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.presentation__content p {
+  color: #e5e7eb;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.presentation__content p span {
+  color: #a78bfa;
+  font-weight: 600;
+}
 
 @keyframes float {
   0% {
@@ -62,25 +51,34 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-.btn-purple {
+.btn-secondaire, .btn-purple {
   display: inline-block;
   padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
   font-weight: 600;
   text-align: center;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .btn-purple {
   background-color: #7e22ce;
-  color: white;
 }
 .btn-purple:hover {
   background-color: #6b21a8;
 }
-.btn-purple:active {
-  background-color: #5b21b6;
-}
 
+.btn-secondaire {
+  background-color: transparent;
+  border: 1px solid #9333ea;
+  color: #9333ea;
+}
+.btn-secondaire:hover {
+  background-color: #9333ea;
+  color: #fff;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Arial", sans-serif;
@@ -93,6 +91,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  color: #c8a2ff;
+  font-weight: bold;
 }
 
 h3 {
@@ -110,3 +110,25 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.header__logo span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+.header__logo span:focus {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */
