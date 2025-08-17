@@ -2,7 +2,7 @@
 
 // layouts.scss
 
-@mixin container($max-width: 1280px) {
+.container {
   width: 90%;
   max-width: $max-width;
   margin-left: auto;
@@ -10,6 +10,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+
 
 body {
   font-family: $font-main;
@@ -33,37 +35,13 @@ body {
 
   &__footer {
     padding: 1rem;
-    text-align: center;
-    background-color: lighten($gray-950, 10%);
+
+   
   }
 
 
 }
 
-.header {
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; // équivaut à Tailwind gap-2
-
-    img {
-      width: 2.5rem;  // équivaut à w-10
-      height: 2.5rem; // équivaut à h-10
-    }
-
-    span {
-      font-weight: bold;
-      font-size: 1.25rem; // équivaut à text-xl
-      color: #fff; // text-white
-      cursor: pointer;
-
-      &:focus {
-        outline: 2px solid #a855f7; // violet (focus visible)
-        outline-offset: 2px;
-      }
-    }
-  }
-}
 
 
 .presentation {

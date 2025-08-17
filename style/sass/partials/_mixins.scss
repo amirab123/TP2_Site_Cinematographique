@@ -1,0 +1,18 @@
+
+
+@mixin card {
+  background: #1f2937; 
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: $color-text-light;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+@mixin social-icon($color, $hover-color) {
+  color: $color;
+  font-size: 1.875rem; 
+  &:hover {
+    color: $hover-color;
+  }
+}

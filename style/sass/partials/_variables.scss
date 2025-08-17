@@ -7,12 +7,30 @@ $secondary-color: #ffffff;
 $font-main: 'Arial', sans-serif;
 $font-secondary: 'Courier New', monospace;
 $font-size-base: 16px;
+$purple-light: #c8a2ff; // h2
 
 // _variables breakpoint.
 $breakpoint-sm: 640px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
+
+
+$max-width: 1280px;
+
+
+// Couleurs  section acteurs 
+$color-text-light: #f3f4f6;       // text-gray-100
+$color-text-muted: #9ca3af;       // text-gray-400
+$color-primary: #6366f1;          // indigo-400
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-instagram: #e1306c;
+$color-border: #6b7280;           // border-gray-500
+$color-hover-facebook: lighten($color-facebook, 10%);
+$color-hover-twitter: lighten($color-twitter, 10%);
+$color-hover-instagram: lighten($color-instagram, 10%);
+
 
 
 

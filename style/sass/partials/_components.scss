@@ -25,8 +25,8 @@
 .btn-secondaire {
   @extend %base-button;
   background-color: transparent;
-  border: 1px solid #9333ea;
-  color: #9333ea;
+  border: 1px solid #fafafa;
+  color: #fefdff;
 
   &:hover {
     background-color: #9333ea;

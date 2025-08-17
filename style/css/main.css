@@ -1,112 +1,19 @@
-body {
-  font-family: "Arial", sans-serif;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 8 |   color: $color-text-light;
+ *   |          ^^^^^^^^^^^^^^^^^
+ *   '
+ *   style\sass\partials\_mixins.scss 8:10   card()
+ *   style\sass\partials\team-card.scss 5:3  @use
+ *   style\sass\main.scss 9:1                root stylesheet */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.container.my-5 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.container.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.container.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.container.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-.page {
-  background-color: #0a0a0a;
-  color: #f3f4f6;
-  min-width: 500px;
-}
-.page__header {
-  padding: 1rem;
-  background-color: rgb(22.75, 22.75, 22.75);
-}
-.page__content {
-  padding: 2rem;
-}
-.page__footer {
-  padding: 1rem;
-  text-align: center;
-  background-color: rgb(35.5, 35.5, 35.5);
-}
-.page--light {
-  background-color: #f3f4f6;
-  color: #0a0a0a;
-}
-
-
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.floating-animation {
-  animation: float 3s ease-in-out infinite;
-}
-
-.btn-purple {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.btn-purple {
-  background-color: #7e22ce;
-  color: white;
-}
-.btn-purple:hover {
-  background-color: #6b21a8;
-}
-.btn-purple:active {
-  background-color: #5b21b6;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Arial", sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 8 \2502    color: $color-text-light;\d\a   \2502           ^^^^^^^^^^^^^^^^^\a   \2575 \a   style\\sass\\partials\\_mixins.scss 8:10   card()\a   style\\sass\\partials\\team-card.scss 5:3  @use\a   style\\sass\\main.scss 9:1                root stylesheet";
 }
