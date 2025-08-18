@@ -1,16 +1,7 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 // layouts.scss
-
-.container {
-  width: 90%;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 
 
 body {
@@ -26,7 +17,7 @@ body {
 
   &__header {
     padding: 1rem;
-    background-color: lighten($gray-950, 5%);
+  
   }
 
   &__content {
@@ -44,26 +35,4 @@ body {
 
 
 
-.presentation {
-  &__content {
-    display: grid;
-    grid-template-columns: 1fr; // mobile : une colonne
-    gap: 2rem;
-    align-items: center;
-    padding: 2rem 1rem;
 
-
-    p {
-      color: #e5e7eb; 
-      line-height: 1.6;
-      font-size: 1rem;
-
-      span {
-        color: #a78bfa; 
-        font-weight: 600;
-      }
-    }
-
-  }
-
-}
