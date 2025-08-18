@@ -12,14 +12,14 @@
   <!-- Tailwind  -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
+ 
 <body class="page">
-  <header class="header  flex  justify-between items-center p-4 max-w-screen-xl mx-auto">
-    <div class="header__logo flex items-center gap-2">
+  <header class=" flex  justify-between items-center p-4 max-w-screen-xl mx-auto">
+    <div class=" flex items-center gap-2">
       <a href="index.html">
         <img src="img/icon_cinema.png" alt="Logo UniversMystique" class="w-10 h-10"></a>
       <span tabindex="0" role="button" class="font-bold text-xl text-white-400 cursor-pointer">UniversMystique</span>
-
+ 
     </div>
  <!-- Menu -->
    <!-- Checkbox cachée -->
@@ -37,23 +37,23 @@
     </a>
   </nav>
   </header>
-
+ 
   <!-- Header -->
-
-
+ 
+ 
   <!-- Visuel principal et chiffres -->
-<section class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-20">
-
+<section class="max-w-screen-xl mx-auto min-h-[500px]   p-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 py-20">
+ 
   <div class="order-1 lg:order-2 space-y-6">
     <h2 class="text-3xl md:text-4xl font-bold text-purple-300">Faits divers</h2>
     <p class="text-gray-400">
    Nos chiffres, notre fierté.
     </p>
-
+ 
     <!-- Statistiques -->
     <div class="grid grid-cols-2 gap-6 text-left text-gray-100">
       <div>
-
+ 
        
         <p class="text-2xl font-bold">44M</p>
         <p class="text-sm text-gray-400">Billets vendus</p>
@@ -71,31 +71,30 @@
         <p class="text-sm text-gray-400">Prix remportés</p>
       </div>
     </div>
-
+ 
     <a href="#"
       class="inline-block border border-white text-white px-5 py-2 rounded hover:bg-purple-600 transition duration-300">
       En savoir plus
     </a>
   </div>
-
+ 
  
   <div class="order-2 lg:order-1">
-    <img src="img/movie.jpg"    alt=" Making-of du tournage "  class="rounded-lg shadow-lg w-full" >
-
+    <img src="img/movieUM.jpg"    alt=" Making-of du tournage "  class="rounded-lg shadow-lg w-full" >
+ 
   </div>
-
+ 
 </section>
+ 
+<hr class="bg-white h-0.5 border-none w-[90%] mx-auto my-2">
 
-<div class="container my-5">
-  <hr class="bg-white h-0.5 border-none w-full">
-</div>
-
+ 
   <!-- Galerie bloopers / tournage -->
 <section class="container mx-auto px-4 py-16">
   <h2 class="text-2xl font-bold text-purple-300 text-center mb-8">
     Photos du tournage et bloopers
   </h2>
-
+ 
   <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
     <!-- Ligne 1 -->
     <img src="img/tournage1.png" alt="Blooper 1"
@@ -105,7 +104,7 @@
    <!-- Ligne 3 -->
     <img src="img/tournage3.png" alt="Blooper 3"
       class="col-span-2 lg:col-span-1 w-1/2 lg:w-full mx-auto lg:mx-0 aspect-square object-cover  border border-purple-700 transform transition-transform duration-300 hover:scale-105">
-
+ 
     <!-- Ligne 4 -->
     <img src="img/tournage4.png" alt="Blooper 4"
       class="w-full aspect-square object-cover  border border-purple-700 transform transition-transform duration-300 hover:scale-105">
@@ -117,196 +116,212 @@
       class="col-span-2 lg:col-span-1 w-1/2 lg:w-full mx-auto lg:mx-0 aspect-square object-cover  border border-purple-700 transform transition-transform duration-300 hover:scale-105">
   </div>
 </section>
+ 
+ 
 
-
-<div class="container my-5">
-  <hr class="bg-white h-0.5 border-none w-full">
-</div>
-
-
-
-
- <section class="container mx-auto p-6">
-  <h2 class="text-3xl font-bold mb-4 text-center">La Forêt Horrible — Présentation</h2>
-  <span class="text-center text-gray-500 mb-8">
-    La Forêt Horrible est un film d’horreur psychologique qui plonge le spectateur dans un cauchemar oppressant au cœur d’une forêt hantée par des esprits vengeurs.
+ <hr class="bg-white h-0.5 border-none w-[90%] mx-auto my-2">
+ 
+ 
+<section class="max-w-screen-xl mx-auto min-h-[500px]   p-6 mx-auto p-6">
+  <h2 class="text-3xl font-bold mb-4 text-center text-purple-300">Univers Mystique — Présentation</h2>
+  <span class="text-center text-gray-400 mb-8 block">
+    Univers Mystique est un film d'aventure et de magie qui transporte le spectateur dans un monde fantastique rempli de mystères, créatures légendaires et portails enchantés.
   </span>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+ 
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <!-- Accordéon 1 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Synopsis
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Un groupe d’amis part camper dans une forêt réputée maudite. Quand la nuit tombe, des ombres menaçantes surgissent et transforment leur expédition en lutte pour survivre.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Synopsis
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Trois héros explorent un monde mystique rempli de portails secrets et de créatures magiques. Leur quête les mène à découvrir des artefacts anciens capables de changer le destin de leur univers.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 2 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Personnages principaux
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Julia, la sceptique; Ethan, le passionné de paranormal; et Mia, hantée par de vieux cauchemars. Chacun cache un secret qui les relie à la forêt.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Personnages principaux
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Liora, la magicienne; Kael, le guerrier des ombres; et Arin, le gardien des portails. Chacun possède un don unique qui sera crucial pour affronter les forces mystérieuses.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 3 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Lieu de tournage
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Le film a été tourné dans une ancienne forêt du nord, connue pour ses légendes macabres et ses brumes épaisses qui rendent l’atmosphère irréelle.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Lieux de tournage
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Des forêts anciennes, des montagnes brumeuses et des cavernes enchantées ont servi de décor pour capturer la magie et le mystère du film.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 4 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Légende de la forêt
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      La légende raconte qu’une sorcière a été brûlée vive au centre de la forêt, et que son esprit tourmente quiconque ose y pénétrer après le coucher du soleil.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Créatures et magie
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Des dragons de brume, des esprits anciens et des portails magiques apparaissent dans chaque scène, créant un univers à la fois fascinant et inquiétant.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 5 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Ambiance sonore
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Le film est célèbre pour sa bande sonore angoissante : des chuchotements, des cris lointains, et des bruits de pas qui encerclent les personnages.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Ambiance sonore
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Une bande sonore envoûtante avec des chants anciens, des murmures mystiques et des sons magiques immerge le spectateur dans l'univers.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 6 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Réception critique
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      La Forêt Horrible a été saluée comme l’un des films d’horreur les plus immersifs de l’année, grâce à sa mise en scène oppressante et ses effets visuels glaçants.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Réception critique
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Le film a été salué pour son univers original et immersif, sa magie visuelle et son ambiance mystérieuse captivante.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 7 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Effets spéciaux
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Les créatures ont été créées avec un mélange d’effets pratiques et numériques, donnant vie à des silhouettes spectrales effrayantes tapies dans les broussailles.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Effets spéciaux
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Les effets spéciaux combinent magie numérique et illusions visuelles pour rendre l’univers réaliste et fantastique à la fois.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 8 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Scène culte
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      La scène où Julia se réveille seule au milieu de la forêt et voit des dizaines de croix plantées dans le sol est considérée comme l’un des moments les plus marquants.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Scène culte
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        La scène où les héros traversent un portail ancien illuminé par une lumière mystique est devenue emblématique du film.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 9 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Distribution
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Avec Lily Harper, Noah Collins et Ava Martinez, le casting apporte une intensité réaliste à l’histoire terrifiante.
-    </p>
-  </details>
-
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Distribution
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Avec Eira Lune, Kael Orion et Arin Myst, le casting incarne parfaitement la magie et le mystère de l’univers.
+      </p>
+    </details>
+  </div>
+ 
   <!-- Accordéon 10 -->
-  <details class="group border border-gray-300 rounded-md">
-    <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none">
-      Date de sortie
-      <svg class="w-5 h-5 text-white-600 transition-transform duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-    <p class="p-4 text-gray-600">
-      Le film est sorti le 31 octobre, en parfaite adéquation avec Halloween, renforçant son succès auprès des amateurs de frissons.
-    </p>
-  </details>
+  <div>
+    <details class="group border border-purple-700 rounded-md bg-gray-800">
+      <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-lg list-none text-purple-200">
+        Date de sortie
+        <svg class="w-5 h-5 text-purple-400 transition-transform duration-300 group-open:rotate-180"
+             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="p-4 text-gray-300">
+        Sortie prévue le 15 décembre 2025, pour une plongée immersive dans l’univers mystique dès les fêtes de fin d’année.
+      </p>
+    </details>
+  </div>
 </div>
-
-
-
+ 
 </section>
-  
-
+ 
+ 
+ 
   <!-- Footer -->
-
-
-   <footer class="container py-4 px-6">
+ 
+ 
+   <footer class=" py-4 px-6">
   <div class="flex items-center justify-between">
     <!-- Contact -->
     <div class="flex items-center space-x-4 text-sm">
       <span>📞 <a href="tel:+XX0000000" class="underline"> +XX 000 0000</a> </span>
-      
-      
+     
+     
       <span> <i class="fa-solid fa-envelope"></i> <a href="mailto:hello@courriel.com" class="underline">hello@courriel.com</a></span>
     </div>
-
+ 
     <!-- Noms des auteurs -->
     <div class="text-right text-sm flex-1 p-8 ">
       Amira BELGHARAT & Zakaria NOUBI
     </div>
-
+ 
     <!-- Réseaux sociaux -->
     <div class="flex items-center space-x-3 text-sm">
     <a href="#" class="text-blue-500 hover:text-blue-600">
@@ -327,16 +342,17 @@
     </a>
     </div>
   </div>
-
+ 
   <hr class="border-gray-500 my-4">
-
+ 
   <div class="text-sm text-left">
     Cégep de Trois-Rivières
   </div>
 </footer>
-
-
+ 
+ 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>
-
+ 
 </html>
+ 
