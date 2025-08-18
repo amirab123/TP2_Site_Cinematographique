@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 // components.scss
 
 %base-button {
@@ -36,6 +37,6 @@
 }
 
 .btn-primaire {
-  @include base_btn($bg: #9333ea, $border: 1px solid #9333ea, $color: #fff);
+  @include base_btn($bg: #9333ea, $border: 1px solid #460582, $color: #fff);
 }
 
