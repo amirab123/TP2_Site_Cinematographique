@@ -8,24 +8,37 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="header">
-
+<body class="bg-orange-100  min-h-screen">
+  <header class="bg-green-700">
+  <nav class=" text-white p-4">
+      <div class=" mx-auto flex justify-between items-center">
+        <a href="#" class="text-lg font-bold">TP2 </a>
+        <ul class="flex space-x-4">
+          <li><a href="#infos-projet" class="hover:underline">Infos Projet</a></li>
+          <li><a href="#equipe" class="hover:underline">Équipe</a></li>
+          <li><a href="#technologies" class="hover:underline">Technologies</a></li>
+          <li><a href="#methodologie" class="hover:underline">Méthodologie</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main>
-   <section id="infos-projet" class=" mx-auto px-6 py-10">
-  <div class="max-w-3xl mx-auto space-y-8">
+  <main >
+  
+   <div class="max-w-3xl mx-auto space-y-8">
+   <section id="infos-projet" class=" mx-auto px-6 py-10 ">
+ 
+
     <!-- Titre -->
-    <header class="text-center">
-      <h2 class="text-3xl font-bold">📋 TP2 </h2>
-      <p class="text-sm text-green-400 mt-2">
-     Ce projet est réalisé dans le cadre du programme <strong>Techniques d’intégration Web – Session 2</strong> 
+      <h3 class="text-3xl font-bold">📋 TP2 </h3>
+      <p class="text-xl text-emerald-500 mt-2 mb-4">Présentation du projet</p>
+
+     <p class=" text-teal-500"> Ce projet est réalisé dans le cadre du programme  </p> <strong class="text-green-800">Techniques d’intégration Web – Session 2</strong> 
       au <strong>Cégep de Trois-Rivières</strong>. 
-    </header>
+    </section>
 
     <!-- Équipe -->
-    <article class="bg-violet-800/60 text-white  rounded-2xl p-6 shadow">
+    <section   id="equipe"            class="bg-purple-500 text-white  rounded-2xl p-6 shadow">
       <h3 class="text-xl font-semibold mb-3">Équipe</h3>
       <ul class="list-disc list-inside space-y-1">
         <li>Amira Belgharat</li>
@@ -33,10 +46,10 @@
       </ul>
  
     
-    </article>
+    </section>
 
     <!-- Dépôt GitHub -->
-    <article class="violet-800/60 p-6 shadow">
+    <article  class="bg-purple-700 p-6 rounded-2xl shadow">
       <h3 class="text-xl font-semibold mb-3">Dépôt GitHub</h3>
       <p>
         <a href="https://github.com/amirab123/TP2_belgharatAmira_NoubiZakaria.git 
@@ -47,7 +60,7 @@
     </article>
 
     <!-- Technologies -->
-    <article class="violet-800/60p-6 shadow">
+    <section id="technologie" class="bg-purple-500 shadow rounded-2xl p-6">
       <h3 class="text-xl font-semibold mb-3">Technologies</h3>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-gray-200">
         <li>HTML5</li>
@@ -55,29 +68,29 @@
         <li>SASS (variables, mixins, partials)</li>
         <li>Git / GitHub</li>
       </ul>
-    </article>
+    </section>
 
     <!-- Méthodologie -->
-    <article class="bg-gray-800/60 rounded-2xl p-6 shadow">
+    <section   id="methodologie" class="bg-purple-500 rounded-2xl p-6 shadow">
       <h3 class="text-xl font-semibold mb-3">Méthodologie</h3>
       <ul class="list-disc list-inside space-y-1 text-gray-200">
         <li>Travail collaboratif via GitHub</li>
         <li>Branches <code class="px-1 rounded bg-gray-700">feature/</code> pour chaque section</li>
         <li>Fusion dans <code class="px-1 rounded bg-gray-700">develop</code>, puis dans <code class="px-1 rounded bg-gray-700">main</code> une fois validé</li>
       </ul>
-    </article>
+    </section>
 
     <!-- Date de remise -->
-    <article class="bg-gray-800/60 rounded-2xl p-6 shadow">
+    <article class="bg-purple-700 rounded-2xl p-6 shadow">
       <h3 class="text-xl font-semibold mb-3">Date de remise</h3>
       <p class="text-gray-200">📅 18  Lundi 2025</p>
     </article>
   </div>
-</section>
+
 
   </main>
 
-  <footer>
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
     <p>&copy; 2025 -Cégep de Trois-Rivières  - Tous droits réservés</p>
   </footer>
 </body>
