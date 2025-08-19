@@ -106,4 +106,36 @@ h6 {
   font-size: 1rem;
 }
 
+.facebook {
+  color: #3b82f6;
+  transition: color 0.3s ease;
+}
+.facebook:hover {
+  color: #2563eb;
+}
+
+.linkedin {
+  color: #1D4ED8;
+  transition: color 0.3s ease;
+}
+.linkedin:hover {
+  color: #1E40AF;
+}
+
+.twitter {
+  color: #1da1f2;
+  transition: color 0.3s ease;
+}
+.twitter:hover {
+  color: #0d8ecf;
+}
+
+.instagram {
+  color: #e1306c;
+  transition: color 0.3s ease;
+}
+.instagram:hover {
+  color: #b22a5b;
+}
+
 /*# sourceMappingURL=main.css.map */
